@@ -1342,7 +1342,7 @@
     def __len__(self) -> int:
         return len(self.pages)
 
-    @property
+
     def pages_by_account(self) -> Iterator[Tuple[str,...], List[str]]:
         yield self._models.List_by_account(
             resource_group_name=self._resource_group_name,
