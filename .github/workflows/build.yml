@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: MacM2 Runner
+    runs-on: [self-hosted, macOS, ARM64]
     permissions: read-all
     steps:
       - uses: actions/checkout@v2
